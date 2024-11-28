@@ -1,0 +1,71 @@
+h1 {
+    color: darkgreen;
+}
+
+header {
+    background-color: lightgray;
+    border-radius: .25rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+header img {
+    float: right;
+    max-width: 200px;
+    margin-left: 2em;
+}
+
+.main-button {
+    border: none;
+    background-color: darkgreen;
+    padding: .5rem .75rem;
+    border-radius: .25rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+body {
+    background-color: pink;
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+#main {
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+input[type="text"], input[type="email"], textarea, select {
+    width: 75%;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin: 0rem 0rem 1rem 0rem;
+    padding: .75rem;
+}
+
+/* All placeholder attributes */
+::placeholder {
+    font-size: 1rem;
+}
+
+legend {
+    color:darkgreen;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    width: 100%;
+}
+
+fieldset {
+    border: 1px solid darkgreen;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+label {
+    display: block;
+    padding-bottom: .5rem;
+}
+

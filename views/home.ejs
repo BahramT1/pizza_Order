@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/home.css">  
+    <title>Poppa's Pizza</title>
+
+    <!-- Favicon -->
+     <link rel="icon" type="image/png"
+           href="images/pizza-slice.png">
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <img src="images/pizza-guy.png" alt="Pizza Guy">
+            <h1>Poppa's Pizza</h1>
+            <h2>Serving GRC Students Since 2020</h2>
+            <hr>
+            <p>We make really good pizza</p>
+            <a class="main-button" role="button" href="#">Contact Us</a>
+        </header>
+
+        <form id="pizza-form" method="post" action="success">
+            
+            <!-- Contact Information -->
+            <fieldset>
+                <legend>Contact Info</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter first name">
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter last name">
+
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter email">
+            </fieldset>
+
+            <!-- Pickup or Delivery -->
+            <fieldset>
+                <legend>Select Pickup or Delivery</legend>
+                    <label for="pickup">
+                        <input type="radio" id="pickup" 
+                            name="method" value="pickup">Pickup
+                    </label>
+                    <label for="delivery">
+                        <input type="radio" id="delivery" 
+                            name="method" value="delivery">Delivery
+                    </label>
+            </fieldset>
+
+            <!-- Toppings -->
+            <fieldset>
+                <legend>Select Toppings</legend>
+
+                <label>
+                    <input type='checkbox'  
+                    value='pepperoni' 
+                    name='toppings'>Pepperoni
+                </label>
+                <label class='form-check-label'>
+                    <input type='checkbox' value='olives' 
+                    name='toppings'>Olives</label>
+                <label class='form-check-label'>
+                    <input type='checkbox' value='sausage' 
+                    name='toppings'>Sausage</label>
+                <label class='form-check-label'>
+                    <input type='checkbox' 
+                    value='artichokes' 
+                    name='toppings'>Artichokes</label>
+            </fieldset>
+
+            <!-- Pizza Size Select List -->
+            <fieldset class="form-group">
+                <legend>Pizza Size</legend>
+                <select id="size" name="size">
+                    <option value='none'>-- Select a Size --</option>
+                    <option value='small'>Small</option>
+                    <option value='med'>Medium</option>
+                    <option value='large'>Large</option>
+                    <option value='xl'>Extra Large</option>
+                </select>
+            </fieldset>
+
+            <!-- Comment field -->
+            <label for="comment">Comment:</label>
+            <textarea rows="5" id="comment" name="comment"></textarea>
+
+            <!-- Email Sign-up -->
+            <label>
+                <input type="checkbox" checked="checked" name="discount"> 
+                Sign me up for discounts!
+            </label>
+
+
+            <!-- Order button -->
+            <button type="submit" class="main-button">Place Order</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
